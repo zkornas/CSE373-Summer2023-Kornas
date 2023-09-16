@@ -30,9 +30,9 @@ Required fields:
 - You must store your min-heap in the field named items. It should be an ArrayList of PriorityNodes, the class used to store items along with their priorities.
 - Your heap ArrayList must start at the index indicated by START_INDEX. (You may change the value of this constant to match whatever you implement.)
 
-Required runtimes (where �n is the heap size):
-- peekMin, contains, size and changePriority must run in �(log�)O(logn) time.
-- add and removeMin must run in �O(log�n) time except for the rare resize operation.
+Required runtimes (where n is the heap size):
+- peekMin, contains, size and changePriority must run in O(logn) time.
+- add and removeMin must run in O(logn) time except for the rare resize operation.
 - You may not import other priority queue implementations. However, you are allowed to import other built-in Java structures (ex. java.util.HashMap, TreeMap, ArrayList, etc.) when developing your code.
 
-Remember that the the �(⋅)O(⋅) notation only denotes upper bounds. It is possible to implement some methods with better runtimes.
+Remember that the the O(⋅) notation only denotes upper bounds. It is possible to implement some methods with better runtimes.
