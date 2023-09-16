@@ -21,3 +21,18 @@ Naive Implementation
 For reference, we have provided NaiveMinPQ, a simple and slow implementation of the ExtrinsicMinPQ interface. You can use the naive implementation when writing your own tests, as a reference to compare results against when testing your own implementation.
 
 peekMin, removeMin, contains, and changePriority use Java’s Stream API to do brute force searches over the entire list of items. This takes time proportional to the length of the list, or Θ(n).
+
+Heap Implementation
+
+Complete ArrayHeapMinPQ, implementing ExtrinsicMinPQ subject to the following constraints:
+
+Required fields:
+- You must store your min-heap in the field named items. It should be an ArrayList of PriorityNodes, the class used to store items along with their priorities.
+- Your heap ArrayList must start at the index indicated by START_INDEX. (You may change the value of this constant to match whatever you implement.)
+
+Required runtimes (where �n is the heap size):
+- peekMin, contains, size and changePriority must run in �(log�)O(logn) time.
+- add and removeMin must run in �(log�)O(logn) time except for the rare resize operation.
+- You may not import other priority queue implementations. However, you are allowed to import other built-in Java structures (ex. java.util.HashMap, TreeMap, ArrayList, etc.) when developing your code.
+
+Remember that the the �(⋅)O(⋅) notation only denotes upper bounds. It is possible to implement some methods with better runtimes.
