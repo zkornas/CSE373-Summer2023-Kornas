@@ -24,7 +24,7 @@ A seam is a path of adjacent or diagonally-adjacent pixels from one side of the 
 
 This subproblem looks much like a regular shortest path problem, since you would still be looking for a “path” of pixels to draw a line through. However, there are three important items to take into account:
 - Each edge weight is based on a vertex (pixel) rather than the edge itself. So, you’ll have to calculate a weight based on pixels, but also decide where to put the weight on the edges.
-- The goal is to find the shortest path from any of the �H pixels in the left column to any of the �H pixels in the right column or any of the �W pixels in the top row to any of the �W pixels in the bottom row.
+- The goal is to find the shortest path from any of the H pixels in the left column to any of the H pixels in the right column or any of the W pixels in the top row to any of the W pixels in the bottom row.
 - The graph has a regular structure assuming that the coordinates are in the prescribed ranges (which means that the graph is a directed acyclic graph (DAG)):
     - There is a rightward edge (x,y) to pixels (x+1,y−1), (x+1,y), and (x+1,y+1).
     - There is a downward edge from pixel (x,y) to pixels (x−1,y+1), (x,y+1), and (x+1,y+1).
